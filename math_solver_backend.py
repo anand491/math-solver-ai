@@ -11,7 +11,6 @@ def solve_math():
     problem = data.get("problem", "")
 
     try:
-        # Parse and evaluate the math expression
         expression = sp.sympify(problem)
         simplified = sp.simplify(expression)
         return jsonify({
