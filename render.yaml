@@ -1,0 +1,6 @@
+render.yaml
+
+services:
+
+type: web name: math-solver-api env: python buildCommand: "pip install -r requirements.txt" startCommand: "python math_solver_backend.py" plan: free region: oregon
+
